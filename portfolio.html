@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Aerial Images | Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand shadow" href="index.html">
+          <img src="images/logo.png" alt="aerial images logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+          <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active">
+              <a class="nav-link shadow" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link shadow" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link shadow" href="services.html">Services</a>
+            </li>
+            <li class="nav-item shadow active">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item shadow active d-xl-none d-lg-none">
+              <a class="nav-link" href="request_demo.html">Request a Quote</a>
+            </li>
+          </ul>
+        </div>
+        <a href="request_demo.html" class="requestButton"><button class="btn btn-outline-light ml-auto" type="button">Request a Quote</button></a>
+      </nav>
+    </header>
+
+    <div class="grid-container">
+      <div class="grid-header">
+        <p>Our Work</p>
+      </div>
+      <div class="item1">
+        <p class="hover-text nohover" data-hover="
+        When the Serbian government urgently needed
+        to map water damage at the Kolubara lignite pit, it
+        turned to GeoGIS Consultants, whose team used an
+        eBee to provide the client’s deliverables in a matter
+        of days.">
+          Survey Mapping</p>
+        <i class="fas fa-play-circle fa-lg smVideo"
+        onclick="const el = document.getElementById('surveyMappingVideo'); el.webkitRequestFullscreen();"></i>
+      </div>
+      <div class="item2">
+        <p class="hover-text" data-hover="
+        The result of the merger of Charente Alliance and Corea,
+        OCEALIA Group boasts 7,200 farmer members and almost 900
+        employees. Since 2015, five drone operators have been flying
+        OCEALIA’s two senseFly eBee Ag unmanned aircraft, or drones,
+        carrying AIRINOV multiSPEC 4C sensors.">
+          Agriculture</p>
+        <i class="fas fa-play-circle fa-lg agVideo"
+        onclick="const el = document.getElementById('agricultureVideo'); el.webkitRequestFullscreen();"></i>
+      </div>
+      <div class="item3">
+        <p class="hover-text" data-hover="
+        GRAHAM Construction’s previous method of performing
+        its regular cut and fill volume calculations was to employ
+        terrestrial surveying instruments. However, these ground-based methods were a
+        costly, and sometimes risky, endeavour.">
+          Construction</p>
+        <i class="fas fa-play-circle fa-lg inspectVideo" 
+        onclick="const el = document.getElementById('inspectionsVideo'); el.webkitRequestFullscreen();"></i>
+      </div>
+      <div class="item4">
+        <p class="hover-text" data-hover="
+        HOME Real Estate uses drones to show off the most important aspects
+        of real estate; location.  An aerial view is the best perspective to
+        show a future home buyer what they're lot layout is going to look like.">
+          Real Estate</p>
+        <i class="fas fa-play-circle fa-lg reVideo" 
+        onclick="const el = document.getElementById('realEstateVideo'); el.webkitRequestFullscreen();"></i>
+      </div>
+    </div>
+
+    <!--VIDEOS-->
+    <video id="surveyMappingVideo" width="100%" height="100%" controls preload="metadata">
+      <source src="videos/videography.mp4" type="video/mp4">
+      <source src="videos/videography.webm" type="video/webm">
+    </video>
+
+    <video id="agricultureVideo" width="100%" height="100%" controls preload="metadata">
+      <source src="videos/agriculture.mp4" type="video/mp4">
+      <source src="videos/agriculture.webm" type="video/webm">
+    </video>
+
+    <video id="inspectionsVideo" width="100%" height="100%" controls preload="metadata">
+      <source src="videos/inspections.mp4" type="video/mp4">
+      <source src="videos/inspections.webm" type="video/webm">
+    </video>
+
+    <video id="realEstateVideo" width="100%" height="100%" controls preload="metadata">
+      <source src="videos/real_estate.mp4" type="video/mp4">
+      <source src="videos/real_estate.webm" type="video/webm">
+    </video>
+
+    <footer>
+      <div class="socialMedia">
+        <a href="https://www.facebook.com" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <a href="https://www.twitter.com" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+
+        <a href="mailto:someone@example.com?" target="_top" target="_blank">
+          <i class="far fa-envelope"></i>
+        </a>
+
+        <a href="tel:1-234-567-8900">
+          <i class="fas fa-phone"></i>
+        </a>
+      </div>
+      <p>Copywrite Aerial Images</p>
+    </footer>
+
+  </body>
+
+</html>

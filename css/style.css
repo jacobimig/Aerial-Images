@@ -1,0 +1,644 @@
+/*GLOBAL*/
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', 'Open Sans Pro', sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+/*NAVBAR*/
+.navbar {
+  z-index: 100;  
+  background-color: rgba(0, 0, 0, 0.8); 
+  font-size: 1.2em;
+}
+
+.fa-bars {
+color: #f7f9fb;
+}
+
+.shadow {
+text-shadow: 1px 1px black !important;
+}
+
+.nav-link, .navbar-brand {
+  color: #f7f9fb;  
+}
+
+.nav-link:hover {
+  color: #f7f9fb;  
+}
+
+.navbar img {
+transform: scale(0.6);
+}
+/*ABOUT PAGE ONLY*/
+.shadow {
+text-shadow: 1px 1px black;
+}
+/*END*/
+
+.nav-item {
+    border-bottom: 1px solid transparent;
+    transition: all ease-in-out 0.25s;
+}
+
+/* HOME PAGE */
+.video-header {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #f7f9fb;	
+  
+}
+
+.fullscreen-video-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.fullscreen-video-wrap video{
+    min-width: 100%; 
+    min-height: 100%;    
+    width: auto;
+    height: auto; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);      
+}
+
+/*PORTFOLIO PAGE*/
+/*GRID*/
+.grid-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+  
+  .grid-container > div {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grid-header, .item1, .item2, .item3 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+    color: #f7f9fb;
+    font-size: 2em;
+    font-weight: 600;
+    text-shadow: 1px 1px black;
+  }
+
+  .item4 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 50vh;
+    color: #f7f9fb;
+    font-size: 2em;
+    font-weight: 600;
+  }
+  
+ .item1, .item2, .item3, .item4 {
+     width: 50%;
+     border-top: 5px solid #31708e;
+  }
+  
+  /*GRID PICTURES*/
+  .grid-header {
+    background-image: url("../images/our_work_tn.jpg");
+    font-size: 3em;
+    font-weight: medium;
+    text-shadow: 2px 2px black;
+  }
+
+  .item1 {
+    background-image: url("../images/videography_tn.jpg");
+    float: left;
+    position: relative;
+  }
+  
+  .item2 {
+    background-image: url("../images/agriculture_tn.jpg");
+    border-left: 5px solid #31708e;
+    float: right;
+    position: relative;
+  }
+  
+  .item3 {
+    background-image: url("../images/inspections_tn.jpg");
+    float: left;
+    position: relative;
+  }
+  
+  .item4 {
+    background-image: url("../images/real_estate_tn.jpg");
+    border-left: 5px solid #31708e;
+    float: right;
+    position: relative;
+  }
+
+  /*VIDEOS*/
+  #surveyMappingVideo, #agricultureVideo, 
+  #inspectionsVideo, #realEstateVideo {
+    display: none;
+  }
+
+  /*PLAY BUTTON ICON*/
+ .fa-play-circle {
+    position: absolute;
+    top: 65%;
+    cursor: pointer;
+    color: #f7f9fb;
+    animation: pulse-border 1500ms ease-out infinite;
+}
+
+/*PULSE ANIMATION*/
+@keyframes pulse-border {
+  0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  100% {
+    transform:  scale(1.3);
+    opacity: 1;
+  }
+}
+  
+  /*SERVICES*/
+  .services_bkg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    font-size: 1em;
+    font-family: 'Roboto', serif;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #666;
+    background-color: #f7f9fb;
+  }
+
+  .pimg1, .pimg2, .pimg3, .pimg4, .pimg5 {
+    position: relative;
+    opacity: 0.8;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .pimg1 {
+    background-image: url("../images/services1.jpg");
+    min-height: 100vh;
+  }
+  
+  .pimg2 {
+    background-image: url("../images/services2.jpg");
+    min-height: 50vh;
+  }
+  
+  .pimg3 {
+    background-image: url("../images/services3.jpg");
+    min-height: 50vh;
+  }
+
+  .pimg4 {
+    background-image: url("../images/services4.jpg");
+    min-height: 50vh;
+  }
+
+  .pimg5 {
+    background-image: url("../images/services4.jpg");
+    min-height: 50vh;
+  }
+    
+  .section > h2 {
+    text-align: center;
+  }
+  
+  .section-dark {
+    background-color: #687864;
+    color: #ddd;
+  }
+  
+  .ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #687864;
+    font-size: 2em;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .bigText {
+    font-size: 2.5vw;
+  }
+  
+  .ptext .border {
+    background-color: #111;
+    color: #f7f9fb;
+    padding: 20px;
+  }
+  
+  .ptext .border.trans {
+    background-color: transparent;
+  }    
+
+  /*SERVICES LIST*/
+ .servicesList {
+   text-align: left;
+ }
+
+ .left, .right {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .left > ul, .right > ul {
+   list-style-type: none;
+ }
+
+ .left li, .right li {
+  list-style-image: url("../images/drone_small.png");
+  padding: 5px;
+}
+ 
+/*CASE STUDY & REVIEW SECTION*/
+.transBorder {
+  border-right: 0.5em solid transparent;  
+}
+
+.caseStudyBox {
+  background-image:
+  linear-gradient(#282e34, #282e34),
+  linear-gradient(180deg, #687864, #31708e 100%);
+  background-repeat: no-repeat;
+  background-origin: padding-box, border-box;
+}
+
+.caseStudyBox a {
+  color: #8fc1e3;
+}
+
+.border > a {
+  color: #f7f9fb;
+}
+
+/*STATISTICS SECTION*/
+.statisticsBox {
+  font-size: 1.5em;
+}
+
+.num {
+  display: inline;
+}
+
+/*CUSTOMER REVIEWS*/
+
+.txt4 {
+  font-size: 3vw;
+  text-shadow: 2px 2px black;
+}
+
+.reviewsBox {
+  background-image:
+        linear-gradient(#282e34, #282e34),
+        linear-gradient(180deg, #687864, #31708e 100%);
+        background-repeat: no-repeat;
+        background-origin: padding-box, border-box;
+}
+
+.fa-quote-right, .fa-quote-left {
+  font-size: 1.25em;
+}
+
+.txt5 {
+  font-size: 3vw;
+  white-space: wrap;
+  text-shadow: 2px 2px black;
+}
+  /*ABOUT US PAGE*/
+  .about_bkg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+}
+
+  .aboutImg1, .aboutImg2, .aboutImg3, .aboutImg4 {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .aboutImg1 {
+    background-image: url("../images/team.jpeg");
+    min-height: 100%;
+  }
+  
+  .aboutImg2 {
+    background-image: url("../images/headshot1.jpeg");
+    min-height: 60vh;
+  }
+  
+  .aboutImg3 {
+    background-image: url("../images/headshot2.jpeg");
+    min-height: 60vh;
+  }
+
+  .aboutImg4 {
+    background-image: url("../images/headshot4.jpeg");
+    min-height: 60vh;
+  }
+  
+.section {
+    text-align: center;
+    padding: 5vh 5vw;
+  }
+  
+.section-dark {
+    background-color: #282e34;
+    color: #ddd;
+  }
+
+.aboutText .border.trans {
+    background-color: transparent;
+}
+
+.aboutText {
+    position: relative;
+    height: 60vh;
+    width: 40%;
+    background-color: rgba(0, 0, 0, .75);
+}
+
+.asideText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2.5em;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.asideText h3 {
+  font-size: 1em;
+}
+
+.asideText p {
+  font-size: 0.75em;
+  margin-top: 0.5em;
+}
+
+/*REQUEST DEMO PAGE*/
+
+ .formBKG {
+  background-image: url("../images/request_quote.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+}
+
+form {
+  width: 50%;
+  margin: auto;
+  color: #f7f9fb;
+  background-color: rgba(73, 122, 163, 0.6);
+  font-size: 1.25em;
+  position: relative;
+  top: 20vh;
+  border: 3px solid rgb(73, 122, 163);
+}
+
+label {
+  text-shadow: 1px 1px black;
+}
+
+.btn-primary {
+   width: 100%;
+   background-color: #97ac92 !important;
+   border: #97ac92 !important;
+}
+
+/*FOOTER*/
+footer {
+  z-index: 2;  
+  width: 100%;
+  font-size: 1.25em;
+  background-color: #687864;
+}
+
+.socialMedia a {
+  color: #f7f9fb;
+}
+
+.socialMedia {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer p {
+  color: #f7f9fb;
+  text-align: center;
+  margin: 0;
+}
+
+/*MEDIA QUERRIES*/
+
+  @media screen and (min-width: 990px) {
+    .nav-item:hover {
+      border-color: #f7f9fb;
+  }
+
+    /*PORTFOLIO GRID HOVER EFFECTS*/
+    .hover-text:hover {
+      font-size: 0px;
+    }  
+    .hover-text:hover:after  {
+      background-color: rgba(0, 0, 0, 0.8);
+      content: attr(data-hover);
+      font-size: 1.5vw;
+    }
+
+    .fa-play-circle:hover {
+      color: #5085a5;
+  }
+    /*LINK TO REQUEST QUOTE PAGE AT BOTTOM OF SERVICES PAGE*/
+    .border > a:hover {
+      color: #5085a5;
+      text-decoration: none;
+    }
+    /*REQUEST FORM SUBMIT HOVER*/
+    input[type=submit]:hover {
+      background-color: #687864;
+    }
+    /*NAV LINK HOVER*/  
+    .socialMedia a:hover {
+      color: #31708e;
+    }
+  }
+@media screen and (max-width: 990px) {
+  
+/*DISABLE FIXED SCROLLING ON SERVICES/ABOUT PAGE*/
+  .aboutImg1, .aboutImg2, .aboutImg3, .aboutImg4,
+  .services_bkg, .pimg1, .pimg2, .pimg3, .pimg4, .pimg5 {
+    background-attachment: scroll;
+  }   
+/*REMOVE REQUEST DEMO BUTTON*/  
+  .requestButton {
+    display: none;
+  }
+  /*CHANGE PORTFOLIO GRID TO SINGLE COLUMN*/  
+  .grid-header, .item1, .item2, .item3, .item4 {
+    height: 50vh;
+    width: 100%;
+    border-left: 1px solid #31708e;
+  }
+  /*REMOVE PULSE FROM PLAY BUTTON*/ 
+  .fa-play-circle {
+    animation: none;
+  }
+
+  /*ABOUT PAGE*/
+  .asideText {
+    font-size: 5vw;
+  } 
+
+  .asideText h3 {
+    font-size: 4vw;
+    margin-bottom: 0.5em;
+  }
+
+  form {
+    border-radius: 5px;
+    background-color: rgba(73, 122, 163, 0.6);
+    padding: 10px;
+    width: 100%;  
+    margin: auto;
+    color: #f7f9fb;
+   }
+
+   .formBKG {
+    height: 100vh;
+    width: 100%;
+  }
+} 
+
+@media screen and (max-width: 768px) {
+.fullscreen-video-wrap video {
+  display: none;
+}
+
+.fullscreen-video-wrap {
+  background-image: url("../images/videography_tn.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+}
+
+.fullscreen-video-wrap h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  white-space: nowrap;
+  text-shadow: 2px 2px black;
+  font-size: 9vw;
+}
+
+  /*SERVICES PAGE*/
+  .caseStudyBox {
+    background:transparent;
+    margin-bottom: 5vw;
+  }
+
+  .caseStudyBox p {
+    margin: 0;
+  }
+
+  .caseStudyBox a:hover {
+    text-decoration: none;
+  }
+
+  .reviewsBox {
+    background: transparent;
+  }
+
+  /*ABOUT PAGE*/
+  .asideText {
+    font-size: 2em;
+  }
+}
+
+/*CASE STUDY/REVIEW BOX BORDER GRADIENT*/
+@media screen and (max-width: 600px) {
+
+  .right {
+    display: none;
+  }
+
+  .txt2 {
+   font-size: 5vw;
+  }
+
+    /*ABOUT PAGE*/
+    .asideText {
+      font-size: 5vw;
+    } 
+
+    .asideText h3 {
+      font-size: 4vw;
+      margin-bottom: 0.5em;
+    }
+
+    .smallTxt h3 {
+      font-size: 5vw;
+    }
+
+    .smallTxt p {
+      font-size: 4vw;
+    }
+
+  .socialMedia a {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0.5em 0;
+  }
+
+  footer {
+    color: #f7f9fb;
+    text-align: center;
+  }
+}
